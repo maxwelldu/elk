@@ -1,0 +1,8 @@
+kibana:
+  image: kibana
+  container_name: kibana 
+  restart: always
+  ports:
+    - "5601:5601"
+  external_links:
+    - elasticsearch:elasticsearch
